@@ -1,0 +1,59 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee; /* Hintergrundfarbe für den gesamten Body */
+    margin: 0; /* Entfernen Sie den Standardabstand */
+    padding: 20px; /* Fügen Sie etwas Polsterung hinzu, um den Inhalt vom Rand zu trennen */
+}
+
+.flex-item{
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* Flex Container-Stile */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Zentriert die Elemente horizontal */
+    max-width: 400px; /* Begrenzen Sie die Breite des Containers */
+    margin: 0 auto; /* Zentriert den Container horizontal */
+    background-color: #ffffff; /* Hintergrundfarbe für den Container */
+    border-radius: 10px; /* Runde Ecken für den Container */
+    padding: 20px; /* Fügen Sie etwas Polsterung hinzu */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten für den Container */
+}
+
+/* Input-Stile */
+input[type="number"] {
+    width: 100%; /* Füllt die verfügbare Breite im Container aus */
+    padding: 10px; /* Fügen Sie etwas Polsterung hinzu */
+    margin-bottom: 20px; /* Abstand nach unten für den Input */
+    border: 1px solid #ccc; /* Etwas Rahmen für den Input */
+    border-radius: 5px; /* Runde Ecken für den Input */
+    box-sizing: border-box; /* Berechnet die Größe des Inputs inklusive Rahmen und Polsterung */
+}
+
+/* Button-Stile */
+button {
+    padding: 10px 20px; /* Polsterung oben/unten links/rechts */
+    margin: 5px; /* Abstand zwischen den Buttons */
+    border: none; /* Entfernt den Standardrahmen */
+    border-radius: 5px; /* Runde Ecken für die Buttons */
+    cursor: pointer; /* Zeige an, dass es sich um anklickbare Elemente handelt */
+}
+
+/* Start-Button-Stile */
+button[name="button-start"] {
+    background-color: #4CAF50; /* Hintergrundfarbe für den Start-Button */
+    color: white; /* Textfarbe für den Start-Button */
+}
+
+/* Stop-Button-Stile */
+button[name="button-stop"] {
+    background-color: #f44336; /* Hintergrundfarbe für den Stop-Button */
+    color: white; /* Textfarbe für den Stop-Button */
+}
+
+

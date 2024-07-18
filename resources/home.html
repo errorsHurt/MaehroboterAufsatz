@@ -8,8 +8,28 @@
 </head>
 <body>
 
-<button onclick="fillLabel()">Teste mich</button>
-<label id="ausgabe"></label>
+<div class="flex-container" style="max-width: fit-content; margin-left: auto; margin-right: auto">
+
+    <div style="margin-bottom: 20px">
+        <label>Düngeraufsatz</label>
+    </div>
+
+    <div class="input-container">
+        <label for="drehzahl-input" class="input-label">Drehzahl</label>
+        <input id="drehzahl-input" type="number" onchange="updateDrehzahl(this.value)" value="0"/>
+    </div>
+
+    <div class="flex-item">
+        <div>
+            <button name="button-start" onclick="startDuengeraufsatz()">Start</button>
+        </div>
+        <div>
+            <button name="button-stop" onclick="stopDuengeraufsatz()">Stop</button>
+        </div>
+    </div>
+
+
+</div>
 
 </body>
 </html>

@@ -1,7 +1,28 @@
-var counter = 0
+const DEFAULT_DREHZAHL = 0;         // Standartdrehzahl festlegen
+let aktuelleDrehzahl = DEFAULT_DREHZAHL;
+let isAufsatzRunning = false;
 
-function fillLabel(){
-    counter += 1;
-    const label = document.getElementById("ausgabe")
-    label.textContent = counter;
+function updateDrehzahl(neueDrehzahl) {
+    aktuelleDrehzahl = neueDrehzahl;
+    console.log(aktuelleDrehzahl)
+}
+
+function startDuengeraufsatz() {
+    if (isAufsatzRunning) {
+        console.log("Der Düngeraufsatz ist bereits eingeschaltet!");
+    } else {
+        console.log("Starte Düngeraufsatz mit Drehzahl: " + aktuelleDrehzahl);
+        // Hier die Motoren starten
+        isAufsatzRunning = true;
+    }
+}
+
+function stopDuengeraufsatz() {
+    if (isAufsatzRunning) {
+        console.log("Stoppe Düngeraufsatz");
+        // Hier die Motoren stoppen
+        isAufsatzRunning = false;
+    } else {
+        console.log("Der Düngeraufsatz ist bereits ausgeschaltet!");
+    }
 }
